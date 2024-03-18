@@ -1,4 +1,3 @@
-# Install_Mediapipe
 ### Installing Mediapipe using Python Environment
 
 If you encounter an error while trying to install Mediapipe using pip, it might be due to compatibility issues with your Python version. Mediapipe Python officially supports versions 3.7 to 3.10 on certain operating systems.
@@ -49,7 +48,17 @@ If your Python version is outside the supported range, you can try installing a 
 
    This will automatically include all versions managed by Pyenv in your PATH.
 
-5. **Verify Installation**:
+5. **Set Pip Alias**:(optional)
+
+   You can create an alias for pip to point to the correct pip version associated with the installed Python version:
+
+   ```bash
+   alias pip='/Users/shivakhatri/.pyenv/versions/3.7.17/bin/pip'
+   ```
+
+   Adding this alias will ensure that when you use the `pip` command, it will use the correct version associated with Python 3.7.17.
+
+6. **Verify Installation**:
 
    Verify that the correct Python version is now active:
 
@@ -59,14 +68,12 @@ If your Python version is outside the supported range, you can try installing a 
 
    This should display the Python version you installed with Pyenv.
 
-6. **Install Mediapipe**:
+7. **Install Mediapipe**:
 
-   Now that you have the correct Python version installed and active, you can install Mediapipe using pip:
+   Now that you have the correct Python version installed and active, you can install Mediapipe using the newly aliased pip command:
 
    ```bash
    pip install mediapipe
    ```
 
-   Ensure that you are using the correct pip version associated with the installed Python version.
-
-By following these steps, you should now be able to install Mediapipe successfully within your Python environment managed by Pyenv.
+By following these steps, you should now be able to install Mediapipe successfully within your Python environment managed by Pyenv, using the correct version of pip associated with Python 3.7.17.
